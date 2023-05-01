@@ -1,0 +1,178 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/tela_fundo"
+    android:orientation="vertical"
+    tools:context=".Tela02" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="#ffffff"
+        android:layout_height="70dp" >
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_marginRight="10dp"
+            android:layout_width="58dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:clickable="true"
+            android:onClick="minha_conta"
+            android:src="@drawable/chefe" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="right" >
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="60dp"
+      	      	android:clickable="true"
+        	    android:onClick="notificacao"
+                android:layout_height="60dp"
+                android:layout_margin="5dp"
+                android:src="@drawable/notificacao" />
+
+        </LinearLayout>
+
+    </LinearLayout>    
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="50dp"
+        android:textSize="40dp"
+        android:gravity="center"
+        android:text="O que você gostaria de cozinhar hoje?"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#ffffff" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="40dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/carne" />
+
+            <Button
+                android:id="@+id/carnes"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/borda_rosa2"
+                android:textColor="#ffffff"
+                android:textSize="40dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Carnes" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/raspado" />
+
+            <Button
+                android:id="@+id/sobremesas"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/borda_rosa2"
+                android:textColor="#ffffff"
+                android:layout_width="match_parent"
+                android:textSize="40dp"
+                android:layout_height="wrap_content"
+                android:text="Sobremesas" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/salada" />
+
+            <Button
+                android:id="@+id/vegetarianas"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/borda_rosa2"
+                android:textColor="#ffffff"
+                android:layout_width="match_parent"
+                android:textSize="40dp"
+                android:layout_height="wrap_content"
+                android:text="Vegetarianas" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/vegetariano" />
+
+            <Button
+                android:id="@+id/saudaveis"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/borda_rosa2"
+                android:textColor="#ffffff"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="40dp"
+                android:text="Saudáveis" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/oriental" />
+
+            <Button
+                android:id="@+id/orientais"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/borda_rosa2"
+                android:textColor="#ffffff"
+                android:layout_width="match_parent"
+                android:textSize="40dp"
+                android:layout_height="wrap_content"
+                android:text="Orientais" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
