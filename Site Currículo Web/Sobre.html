@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Currículo Digital</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <script src='main.js'></script>
+    <style>
+        body{
+            overflow-x: hidden;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        nav{
+            width: 100%;
+            height: 75px;
+            background-color: lightslategray;
+            border-bottom: solid 1px black;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            right: 0px;
+            bottom: 0px;
+        }
+        a:hover{
+            color: cornflowerblue;
+        }
+        #nome_img{
+            margin-top: 10px;
+            margin-left: 20px;
+        }
+        .sobre{
+            position: absolute;
+            margin-left: 300px;
+            margin-top: 12px;
+            font-size: 40px;
+            font-family: Georgia, 'Times New Roman', Times, serif; 
+            text-decoration: none;
+            color: lightskyblue;
+            text-shadow: black 2px 2px 5px;
+        }
+        .experiencias{
+            position: absolute;
+            margin-left: 465px;
+            margin-top: 12px;
+            font-size: 40px;
+            font-family: Georgia, 'Times New Roman', Times, serif; 
+            text-decoration: none;
+            color: whitesmoke;
+            text-shadow: black 2px 2px 5px;
+        }
+        .contato{
+            position: absolute;
+            margin-left: 750px;
+            margin-top: 12px;
+            font-size: 40px;
+            font-family: Georgia, 'Times New Roman', Times, serif; 
+            text-decoration: none;
+            color: whitesmoke;
+            text-shadow: black 2px 2px 5px;
+        }
+        #sobre{
+            width: 1000px;
+            height: 500px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 100px;
+            border-radius: 10px;
+        }
+        aside{
+            width: 250px;
+            height: 550px;
+            background-color: lightgrey;
+            border: 2px solid gray;
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+            display: table-cell;
+            text-align: center;
+        }
+        .caracteristicas{
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            margin-top: -10px;
+        }
+        #nome_aside{
+            font-size: 30px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        #foto{
+            width: 200px;
+            height: 200px;
+            border: solid 1px white;
+            border-radius: 100%;
+            margin-top: 25px;
+        }
+        .icones{
+            width: 20px;
+            height: 20px;
+        }
+        #conteudo{
+            width: auto;
+            height: auto;
+            display: table-cell;
+        }
+        header{
+            width: 746px;
+            height: 75px;
+            position: absolute;
+            top: 100px;
+            margin: auto;
+            background-color: lightsteelblue;
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            border-top: solid 2px darkcyan;
+            border-right: solid 2px darkcyan;
+            display: inline-block;
+            text-align: center;
+            border-top-right-radius: 10px;
+        }
+        article{
+            width: 746px;
+            height: 474px;
+            background-color: whitesmoke;
+            border-right: 2px solid darkcyan;
+            border-bottom: 2px solid darkcyan;
+            border-top: 1px solid gray;
+            border-bottom-right-radius: 10px;
+            position: absolute;
+            margin-top: 77px;
+        }
+        article p{
+            margin-left: 20px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 20px;
+        }
+        article h4{
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            margin-left: 10px;
+        }
+        article li{
+            font-size: 25px;
+        }
+    </style>
+</head>
+<body background="img/Fundo_sobre.jpg">
+    <nav>
+        <img src="img/nome.png" id="nome_img" alt="Logo">
+        <a href="Sobre.html" class="sobre">Sobre</a>
+        <a href="Experiencias.html" class="experiencias">Experiências</a>
+        <a href="Contato.html" class="contato">Contato</a>
+    </nav>
+    <div id="sobre">
+        <aside>
+            <img src="img/Foto.png" id="foto" alt="Foto">
+            <p id="nome_aside">Renan Mochizuki</p>
+            <p class="caracteristicas"><img src="img/icone_escola.png" class="icones" alt="Ícone Esudante">&nbsp;Estudante</p>
+            <br>
+            <p class="caracteristicas"><img src="img/icone_idade.png" class="icones" alt="Ícone Idade">&nbsp;14 anos</p>
+            <br>
+            <p class="caracteristicas"><img src="img/icone_lugar.png" class="icones" alt="ícone Local">&nbsp;Santana de Parnaíba - São Paulo</p>
+        </aside>
+        <div id="conteudo">
+        <header>
+            <h3>Sobre mim</h3>
+        </header>
+        <article>
+            <p>Sou estudante da Etec Professora Ermelinda Giannini Teixeira e estou cursando o 1º ano do ensino médio 
+                integrado ao ensino técnico.</p>
+            <h4>Perfil</h4>
+            <ul>
+                <li><p>Tenho Conhecimento básico sobre edição de imagens e vídeos, HTML e criação de sistemas</p></li>
+                <li><p>Possuo inglês intermediário</p></li>
+                <li><p>Tenho aptidão para matemática</p></li>
+                <li><p>Prática com aplicativos do Microsoft Office</p></li>
+            </ul>
+        </article>
+        </div>
+        <br>
+    </div>
+</body>
+</html>
