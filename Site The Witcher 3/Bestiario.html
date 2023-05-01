@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Bestiário</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <link rel="shortcut icon" href="img/favicon_bestiario.ico">
+    <style>
+        body{
+            overflow-x: hidden;
+        }
+        #fundo{
+            background-image: url('img/Fundo3.jpg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            position: absolute;
+            top: 0px;
+            bottom: 0px;
+            left: 0px;
+            right: 0px;
+            overflow: auto;
+        }
+        #home{
+            position: fixed;
+            top: 0px;
+            left: 0px;
+            width: 125px;
+            height: auto;
+        }
+        .container{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        h1{
+            font-family:monospace;
+            font-size: 400%;
+            color: darkorange;
+            text-shadow: 0px 0px 5px black;
+            text-align: center;
+            margin-top: 40px;
+        }
+        p{
+            font-size: 200%;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            text-align: center;
+            color: yellow;
+            text-shadow: 1px 1px 1px black;
+        }
+        .bestas{
+            background-size: cover;
+            width: 300px;
+            height: 350px;
+        }
+        #elemental{
+            background-image: url('img/Elementais.png');
+        }
+        #gargula{
+            background-image: url('img/Gargula.png');
+        }
+        #golem{
+            background-image: url('img/Golem.png');
+        }
+        #wyvern{
+            background-image: url('img/Wyvern.png');
+        }
+        #cocatriz{
+            background-image: url('img/Cocatriz.png');
+        }
+        #basilisco{
+            background-image: url('img/Basilisco.png');
+        }
+        #tordo{
+            background-image: url('img/Tordo.png');
+        }
+        #aparicao{
+            background-image: url('img/Aparicao.png');
+        }
+        #hym{
+            background-image: url('img/Hym.png');
+        }
+        #aparicao_diurna{
+            background-image: url('img/Aparicao_diurna.png');
+        }
+        #aparicao_noturna{
+            background-image: url('img/Aparicao_noturna.png');
+        }
+        #urso{
+            background-image: url('img/Urso.png');
+        }
+        #lobo{
+            background-image: url('img/Lobo.png');
+        }
+        #cao{
+            background-image: url('img/Cão.png');
+        }
+        #harpia{
+            background-image: url('img/Harpia.png');
+        }
+        #grifo{
+            background-image: url('img/Grifo.png');
+        }
+        #sucubo{
+            background-image: url('img/Sucubo.png');
+        }
+        #endriuga_macho{
+            background-image: url('img/Endriuga_macho.png');
+        }
+        #aracna{
+            background-image: url('img/Aracna.png');
+        }
+        #aracna_quitinosa{
+            background-image: url('img/Aracna_quitinosa.png');
+        }
+        #bruxa_sepulcral{
+            background-image: url('img/Bruxa_sepulcral.png');
+        }
+        #afogador{
+            background-image: url('img/Afogador.png');
+        }
+        #carnical{
+            background-image: url('img/Carnical.png');
+        }
+        #necroso{
+            background-image: url('img/Necroso.png');
+        }
+        #carnical_atroz{
+            background-image: url('img/Carnical_atroz.png');
+        }
+        #nevoloso{
+            background-image: url('img/Nevoloso.png');
+        }
+        #bruxa_lamuriosa{
+            background-image: url('img/Bruxa_lamuriosa.png');
+        }
+        #bruxa_aquatica{
+            background-image: url('img/Bruxa_aquatica.png');
+        }
+        #ciclope{
+            background-image: url('img/Ciclope.png');
+        }
+        #nekker{
+            background-image: url('img/Nekker.png');
+        }
+        #troll_gelo{
+            background-image: url('img/Troll_do_gelo.png');
+        }
+        #troll_pedra{
+            background-image: url('img/Troll_de_pedra.png');
+        }
+        #lobisomem{
+            background-image: url('img/Lobisomem.png');
+        }
+        #fetulho{
+            background-image: url('img/Fetulho.png');
+        }
+        #berserker{
+            background-image: url('img/Berserker.png');
+        }
+        #liche{
+            background-image: url('img/Liche.png');
+        }
+        #demonio{
+            background-image: url('img/Demonio.png');
+        }
+        #moiras{
+            background-image: url('img/Moiras.png');
+        }
+        #duplice{
+            background-image: url('img/Duplice.png');
+        }
+        #puero{
+            background-image: url('img/Puero.png');
+        }
+        #chorabash{
+            background-image: url('img/Chorabash.png');
+        }
+        #silvano{
+            background-image: url('img/Silvano.png');
+        }
+        #katakan{
+            background-image: url('img/Katakan.png');
+        }
+        #ekimmu{
+            background-image: url('img/Ekimmu.png');
+        }
+        #vampiro_superior{
+            background-image: url('img/Vampiro_superior.png');
+        }
+    </style>
+</head>
+<body>
+<div id="fundo">
+    <a href="Home.html"><img src="img/Icone.png" alt="Home" id="home"></a>
+<h1>Construtos</h1>
+<div id="main_container">
+<div class="container">
+    <div>
+        <div id="elemental" class="bestas"></div>
+        <p>Elemental</p>
+    </div>
+    <div>
+        <div id="gargula" class="bestas"></div>
+        <p>Gárgula</p>
+    </div>
+    <div>
+        <div id="golem" class="bestas"></div>
+        <p>Golem</p>
+    </div>
+</div>
+<h1>Draconídeos</h1>
+<div class="container">
+    <div>
+        <div id="wyvern" class="bestas"></div>
+        <p>Wyvern</p>
+    </div>
+    <div>
+        <div id="cocatriz" class="bestas"></div>
+        <p>Cocatriz</p>
+    </div>
+    <div>
+        <div id="basilisco" class="bestas"></div>
+        <p>Basilisco</p>
+    </div>
+    <div>
+        <div id="tordo" class="bestas"></div>
+        <p>Tordo</p>
+    </div>
+</div>
+<h1>Espectros</h1>
+<div class="container">
+    <div>
+        <div id="aparicao" class="bestas"></div>
+        <p>Aparição</p>
+    </div>
+    <div>
+        <div id="hym" class="bestas"></div>
+        <p>Hym</p>
+    </div>
+    <div>
+        <div id="aparicao_diurna" class="bestas"></div>
+        <p>Aparição Diurna</p>
+    </div>
+    <div>
+        <div id="aparicao_noturna" class="bestas"></div>
+        <p>Aparição Noturna</p>
+    </div>
+</div>
+<h1>Feras</h1>
+<div class="container">
+    <div>
+        <div id="urso" class="bestas"></div>
+        <p>Urso</p>
+    </div>
+    <div>
+        <div id="lobo" class="bestas"></div>
+        <p>Lobo</p>
+    </div>
+    <div>
+        <div id="cao" class="bestas"></div>
+        <p>Cão</p>
+    </div>
+</div>
+<h1>Híbridos</h1>
+<div class="container">
+    <div>
+        <div id="harpia" class="bestas"></div>
+        <p>Harpia</p>
+    </div>
+    <div>
+        <div id="grifo" class="bestas"></div>
+        <p>Grifo</p>
+    </div>
+    <div>
+        <div id="sucubo" class="bestas"></div>
+        <p>Súcubo</p>
+    </div>
+</div>
+<h1>Insectoides</h1>
+<div class="container">
+    <div>
+        <div id="endriuga_macho" class="bestas"></div>
+        <p>Endriúga Macho</p>
+    </div>
+    <div>
+        <div id="aracna" class="bestas"></div>
+        <p>Aracna</p>
+    </div>
+    <div>
+        <div id="aracna_quitinosa" class="bestas"></div>
+        <p>Aracna Quitinosa</p>
+    </div>
+</div>
+<h1>Necrófagos</h1>
+<div class="container">
+    <div>
+        <div id="bruxa_sepulcral" class="bestas"></div>
+        <p>Bruxa Sepulcral</p>
+    </div>
+    <div>
+        <div id="afogador" class="bestas"></div>
+        <p>Afogador</p>
+    </div>
+    <div>
+        <div id="carnical" class="bestas"></div>
+        <p>Carniçal</p>
+    </div>
+    <div>
+        <div id="necroso" class="bestas"></div>
+        <p>Necroso</p>
+    </div>
+    <div>
+        <div id="carnical_atroz" class="bestas"></div>
+        <p>Carniçal Atroz</p>
+    </div>
+    <div>
+        <div id="nevoloso" class="bestas"></div>
+        <p>Nevoloso</p>
+    </div>
+    <div>
+        <div id="bruxa_lamuriosa" class="bestas"></div>
+        <p>Bruxa Lamuriosa</p>
+    </div>
+    <div>
+        <div id="bruxa_aquatica" class="bestas"></div>
+        <p>Bruxa Aquática</p>
+    </div>
+</div>
+<h1>Ogróides</h1>
+<div class="container">
+    <div>
+        <div id="ciclope" class="bestas"></div>
+        <p>Ciclope</p>
+    </div>
+    <div>
+        <div id="nekker" class="bestas"></div>
+        <p>Nekker</p>
+    </div>
+    <div>
+        <div id="troll_gelo" class="bestas"></div>
+        <p>Troll do Gelo</p>
+    </div>
+    <div>
+        <div id="troll_pedra" class="bestas"></div>
+        <p>Troll de Pedra</p>
+    </div>
+</div>
+<h1>Amaldiçoados</h1>
+<div class="container">
+    <div>
+        <div id="lobisomem" class="bestas"></div>
+        <p>Lobisomem</p>
+    </div>
+    <div>
+        <div id="fetulho" class="bestas"></div>
+        <p>Fetulho</p>
+    </div>
+    <div>
+        <div id="berserker" class="bestas"></div>
+        <p>Berserker</p>
+    </div>
+</div>
+<h1>Relictos</h1>
+<div class="container">
+    <div>
+        <div id="liche" class="bestas"></div>
+        <p>Liche</p>
+    </div>
+    <div>
+        <div id="demonio" class="bestas"></div>
+        <p>Demônio</p>
+    </div>
+    <div>
+        <div id="moiras" class="bestas"></div>
+        <p>Moiras</p>
+    </div>
+    <div>
+        <div id="duplice" class="bestas"></div>
+        <p>Dúplice</p>
+    </div>
+    <div>
+        <div id="puero" class="bestas"></div>
+        <p>Púero</p>
+    </div>
+    <div>
+        <div id="chorabash" class="bestas"></div>
+        <p>Chorabash</p>
+    </div>
+    <div>
+        <div id="silvano" class="bestas"></div>
+        <p>Silvano</p>
+    </div>
+</div>
+<h1>Vampiros</h1>
+<div class="container">
+    <div>
+        <div id="katakan" class="bestas"></div>
+        <p>Katakan</p>
+    </div>
+    <div>
+        <div id="ekimmu" class="bestas"></div>
+        <p>Ekimmu</p>
+    </div>
+    <div>
+        <div id="vampiro_superior" class="bestas"></div>
+        <p>Vampiro Superior</p>
+    </div>
+</div>
+</div>
+</div>
+</body>
+</html>
