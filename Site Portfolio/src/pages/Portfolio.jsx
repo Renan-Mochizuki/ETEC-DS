@@ -134,7 +134,7 @@ function Portfolio() {
       <Projetos
         img={[{ src: "3Desconjuracao1", alt: "Desconjuração" }]}
         titulo="Desconjuração"
-        texto="Esse site foi feito para treinar o consumo de arquivos JSON, assim fizemos um site sobre o RPG Ordem Paranormal, armazendo dados de personagens do RPG em JSON e consumindo-os com PHP."
+        texto="Esse site foi feito para treinar o consumo de arquivos JSON, assim fizemos um site sobre o RPG Ordem Paranormal, armazenando dados de personagens do RPG em JSON e consumindo-os com PHP."
         link="https://github.com/Renan-Mochizuki/ETEC-DS/tree/main/Site%20Desconjuracao"
         linguagens={[
           { src: "https://cdn-icons-png.flaticon.com/512/1051/1051277.png", alt: "HTML" },
