@@ -1,7 +1,7 @@
 import Navbar from './components/Navbar.jsx'
 import Home from './pages/Home.jsx'
 import Competencias from './pages/Competencias.jsx'
-import Portfolio from './pages/portfolio.jsx'
+import Portfolio from './pages/Portfolio.jsx'
 import Sobre from './pages/Sobre.jsx'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import './App.css'
